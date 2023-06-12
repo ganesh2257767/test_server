@@ -12,4 +12,4 @@ def greeting():
     }
     
 if __name__ == '__main__':
-    uvicorn.run('app:app', host='localhost', reload=True)
+    uvicorn.run('app:app', host='0.0.0.0', reload=True)
