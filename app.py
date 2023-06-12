@@ -18,5 +18,8 @@ def greeting():
 
 @app.post('/')
 def add(item: Item):
-    return item | {"result": "Item added successfully! (No database, so nothing is added.)"}
+    return {
+        'result': f'{item.name} with desciption {item.description} and price {item.price} added successfully',
+        'note': 'No database initialized so no data is actually being added, only simulated.'
+        }
     
