@@ -18,5 +18,5 @@ def greeting():
 
 @app.post('/')
 def add(item: Item):
-    return item | {"result": "Item added successfully!"}
+    return item | {"result": "Item added successfully! (No database, so nothing is added.)"}
     
